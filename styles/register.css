@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(45,45,45);
+}
+
+.container {
+    min-height: 100vh;
+    background: linear-gradient(225deg, rgba(126,232,250,1) 0%, rgba(197,154,237,1) 51%, rgba(224,191,196,1) 100%);
+    position: relative;
+}
+
+.login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40vw;
+    height: 60vh;
+    background-color: rgb(240,240,240);
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.75);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.login__title {
+    font-size: 48px;
+    padding: 10px 0 0;
+    letter-spacing: 2px;
+}
+
+form {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;     
+    padding: 0 0px 40px;
+    margin: 0 0 0 0;
+}
+
+.form__login {
+    margin-bottom: 12px;
+}
+
+/* .form__password {
+
+
+} */
+
+.login__text, .password__text {
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+.form__placeholder {
+    outline: none;
+    border: 2px solid rgb(220,220,220);
+    border-radius: 6px;
+    padding: 6px 2px 6px 8px;
+    background-color: rgb(220,220,220);
+    box-shadow: inset 1px 2px 2px 0px rgba(0,0,0,0.25);
+    transition: .4s;
+    font-family: 'Poppins', sans-serif;
+    width: 20vw;
+    font-size: 18px;
+}
+
+.form__placeholder:hover, .form__placeholder:focus {
+    border: 2px solid rgb(168, 236, 245);
+}
+
+.form__button {
+    position: absolute;
+    bottom: calc(0% + 50px);
+    left: calc(50% - 57px);
+    font-size: 20px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(168, 236, 245);
+    color: rgb(75,75,95);
+    padding: 10px 30px;
+    border-radius: 9999px;
+    letter-spacing: 1px;
+    transition: .3s;
+	user-select: none;
+	box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+}
+
+.form__button:hover {
+    transform: scale(1.1,1.1);
+}
+
+.form__create {
+    display: flex;
+}
+
+.form__create__text {
+    font-size: 16px;
+    padding: 10px 5px 10px 0;
+}
+
+.form__create__link {
+    font-size: 16px;
+    text-decoration: none;
+    padding: 10px 0;
+}
